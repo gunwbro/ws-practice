@@ -4,10 +4,11 @@
   "description": "express로 웹 소켓 공부",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
   },
   "keywords": [],
-  "author": "",
+  "author": "gunzoe",
   "license": "ISC",
   "dependencies": {
     "connect-flash": "^0.1.1",
