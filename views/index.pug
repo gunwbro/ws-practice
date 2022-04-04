@@ -5,13 +5,5 @@ html
     title GIF 채팅방
   body 
     div F12를 눌러 console 탭과 network 탭을 확인하세요.
-    script(type="module").
-      import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
-      var socket = io("http://localhost:8005", {
-        path: '/socket.io',
-      });
-      socket.on('news', function(data) {
-        console.log(data);
-        socket.emit('reply', 'Hello Node.JS')
-      })
-      
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/index.js") 
